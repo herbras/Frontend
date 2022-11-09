@@ -1,0 +1,118 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(178, 100%, 50%);
+}
+
+.flex-box {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box {
+    width: 280px;
+    border-radius: 13px;
+    padding: 1.8rem;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.img {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 1.8em;
+}
+
+.img::after {
+    content: url(./images/icon-view.svg);
+    background: hsla(215, 51%, 70%,50%);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+.img:hover::after {
+    opacity: 1;
+    border-radius: 9px;
+}
+
+.img #NFT {
+    width: 100%;
+    display: block;
+
+}
+
+#NFT {
+    width: 100%;
+    border-radius: 9px;
+    
+}
+
+hr {
+    background-color: hsl(215, 32%, 27%);
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom: 0.8em;
+}
+hr{
+    margin-bottom: 0.8em;
+}
+.author{
+    display: flex;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+.author img{
+    border: 0.1em solid white;
+    border-radius: 50%;
+}
+.user-dec{
+    margin-left: 0.7em;
+}
+h1 {
+    font-size: 22px;
+    margin-bottom: 0.8em;
+}
+
+h1, .creator {
+    color: white;
+    font-weight: 600;
+}
+
+p, .pp {
+    font-weight: 300;
+    margin-bottom: 0.8em;
+}
+.ppp{
+    font-weight: 600;
+}
+#user {
+    width: 32px;
+}
